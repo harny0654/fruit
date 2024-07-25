@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="brand"></a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="con">
+        <h3 class="mt-4">เข้าสู้ระบบ</h3>
+            <form  action="main.html" onsubmit="return validateForm()">                
+                <div class="mb-3">
+                    <label for="user_id"  >user_id</label>
+                    <input type="username" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" >Password</label>
+                    <input type="password"  name="password" id="password">
+                </div>
+            <button type="submit" >login</button>
+            <!-- <button type="reset" name="signup">reset</button> -->
+        </form>
+        <hr>
+    <p>ยังเป็นเป็นสมาชิกใช้ไหม คลิ้กที่นี่เพื่อ <a href="signup.html">สมัครสมาชิก</a></p>
+</div>
+</body>
+<script src="script1.js"></script>
+</html>
